@@ -11,14 +11,16 @@
 <body>
 <header class="my_header_menu_class">
 this is the header
- <?php //wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
- <?php 
- wp_nav_menu(
-  array(
-    'theme_location' => 'header-menu',
-    'container_class' => 'my_header_menu_class',
-	'container'	=> 'nav',
-  )
-);
- ?> 
+	
+		 <?php //wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+		 <?php 
+		 wp_nav_menu(
+		  array(
+			'theme_location' => 'header-menu',
+			'container_class' => 'my_header_menu_class',
+			'container'	=> 'nav',
+		  )
+		);
+		 ?> 
+	 
 </header>

@@ -15,7 +15,7 @@ function cis_add_hello_script() {
     );
 	wp_enqueue_script('hello-script');
 }
-function themename_widgets_init() {
+function midterm_sidebar() {
     register_sidebar( array(
         'name'          => __( 'Primary Sidebar', 'theme_name' ),
         'id'            => 'sidebar-1',
@@ -26,7 +26,8 @@ function themename_widgets_init() {
     ) );
  
 }
-add_action( 'widgets_init', 'themename_widgets_init' );
+//register sidebar
+add_action( 'widgets_init', 'midterm_sidebar' );
 function register_my_menus() {
   register_nav_menus(
     array(

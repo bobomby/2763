@@ -16,6 +16,7 @@
 		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		 <b>Post Title:</b><?php the_title(); ?><br>
 		<b>Post Content:</b><?php  the_content(); ?><br>
+		<b>Template Part<?php get_template_part( 'template-parts/post/content' ); ?>
 		<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
@@ -23,9 +24,8 @@
 	 </main>
 	 <div id = "sidebar">
 		<div id="sidebar-primary" class="sidebar">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
-		</div>
-		
+			<?php get_sidebar(); ?>
+		</div>		
 	 </div> <!-- sidebar -->
  </div><!-- wrapper -->
 <?php get_footer(); ?>
