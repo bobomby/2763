@@ -1,12 +1,13 @@
-<?php /* Template Name: tag real character */ ?>
+<?php /* Template Name: catagory famous animals */ ?>
  <?php get_header(); ?>
  <div id = "wrapper" class = "clearfix">
 	<main>
-		 <b>tag real characters template</b><br>
+		 <b>catagory famous animals template</b><br>
 		 <b>Start WordPress Loop</b><br>
 		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/post/thumbnail' ); ?>
-			<?php get_template_part( 'template-parts/post/title' ); ?>			
+			<?php get_template_part( 'template-parts/post/title' ); ?>
+			<?php get_template_part( 'template-parts/post/thumbnail' ); ?> <br>
+			 <br>
 		<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
@@ -14,7 +15,7 @@
 	</main>
 	<div id = "sidebar">
 		<div id="sidebar-primary" class="sidebar">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			<?php get_sidebar(); ?>
 		</div>
 		
 	</div> <!-- sidebar -->

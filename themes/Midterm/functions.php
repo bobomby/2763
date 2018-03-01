@@ -6,7 +6,7 @@ function midterm_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'midterm_scripts' );
 //add_action( 'wp_enqueue_scripts', 'cis_add_hello_script' );
-function cis_add_hello_script() {
+function hello_script() {
 	//die('cis_add_hello_script');
 	wp_register_script(
         'hello-script', // name the script so that you can attach other scripts and de-register, etc.
@@ -15,6 +15,23 @@ function cis_add_hello_script() {
     );
 	wp_enqueue_script('hello-script');
 }
+add_action( 'wp_head', 'hello_script' );
+/* alternate alert but doesnt use the js file specified
+function js_alert()
+{
+    ?>
+    <script type="text/javascript">
+        function codeAddress() {
+            alert('Well Hello');
+        }
+        window.onload = codeAddress;
+    </script>
+
+    <?php
+}
+
+add_action('wp_head', 'js_alert');
+*/
 function midterm_sidebar() {
     register_sidebar( array(
         'name'          => __( 'Primary Sidebar', 'theme_name' ),

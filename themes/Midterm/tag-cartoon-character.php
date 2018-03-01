@@ -5,7 +5,7 @@
 		 <b>tag cartoon characters template</b><br>
 		 <b>Start WordPress Loop</b><br>
 		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<?php  the_thumbnail(); ?> <br>			
+			<?php get_template_part( 'template-parts/post/thumbnail' ); ?>		
 		<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
