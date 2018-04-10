@@ -1,0 +1,10 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .post-meta-key {
+	 display: none;
+	}
+ .post-meta {
+	 font-size: 18px; color: maroon; 
+	 }
