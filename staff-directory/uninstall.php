@@ -19,7 +19,7 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       paulc2763.sb.cis
+ * @link       Rmurphy42763.sb.cis
  * @since      1.0.0
  *
  * @package    Staff_Directory

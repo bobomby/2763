@@ -3,7 +3,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       paulc2763.sb.cis
+ * @link       rmurphy42763.sb.cis
  * @since      1.0.0
  *
  * @package    Staff_Directory
@@ -19,7 +19,7 @@
  *
  * @package    Staff_Directory
  * @subpackage Staff_Directory/includes
- * @author     Paul Clark <paulc@cnm.edu>
+ * @author     Robert Murphy <rmurphy4@cnm.edu>
  */
 class Staff_Directory_Loader {
 

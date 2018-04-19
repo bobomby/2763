@@ -8,3 +8,18 @@
  .post-meta {
 	 font-size: 18px; color: maroon; 
 	 }
+	
+/* Grid Layout Custom CSS */
+body.blog article, body.archive article {
+width: 32.5%;
+display: inline-block;
+vertical-align: top;
+text-align: left;
+margin-bottom: 10px;
+position: relative;
+}
+
+body.blog img, body.archive img {
+	height: 150px;
+	width: 150px;
+}

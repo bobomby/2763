@@ -34,7 +34,7 @@
 	<input class="staff-directory-input"  name="staff_directory_last_name" type="text" value="<?php echo $staff_directory_last_name; ?>"  required /><br>
 	<label class="staff-directory-label">Email Address:</label>
 	<input class="staff-directory-input"  name="staff_directory_email" type="email" value="<?php echo $staff_directory_email; ?>"  required /><br>
-	<label class="staff-directory-label">Short Bio:</label>
+	<label class="staff-directory-label">Bio:</label>
 	<input class="staff-directory-input"  name="staff_directory_sbio" type="text" value="<?php echo $staff_directory_sbio; ?>"  required /><br>
 	<label class="staff-directory-label">Sort Order:</label>
 	<input class="staff-directory-input"  name="staff_directory_sort_order" type="text" value="<?php echo $staff_directory_sort_order; ?>"  required /><br>

@@ -3,7 +3,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       paulc2763.sb.cis
+ * @link       rmurphy42763.sb.cis
  * @since      1.0.0
  *
  * @package    Staff_Directory
@@ -18,7 +18,7 @@
  *
  * @package    Staff_Directory
  * @subpackage Staff_Directory/public
- * @author     Paul Clark <paulc@cnm.edu>
+ * @author     Robert Murphy <rmurphy4@cnm.edu>
  */
 class Staff_Directory_Public {
 
@@ -142,4 +142,17 @@ class Staff_Directory_Public {
 	 
 		return apply_filters( 'staff_directory_template_' . $template, $file );
 	}
+	//custom sort order set to ascending
+/*	
+	function staff_directory_ascending_order_sort($query){
+		if ( $query->is_main_query() && is_archive() ){
+			$query->set( 'orderby', 'meta_value' );
+			$query->set( 'meta_key', 'staff_directory_sort_order' );
+			$query->set( 'order' , 'ASC' );
+		}
+	}
+	add_action( 'pre_get_posts' , 'staff_directory_ascending_order_sort' );
+	*/
+	//set thumbnail size
+	//set_post_thumbnail_size( 150, 150 );
 }
